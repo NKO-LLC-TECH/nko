@@ -1,7 +1,20 @@
 # NKO find_missing v0
 
+## URL en vivo
+https://api.nkodatalabs.com (producción, único entorno).
+
 ## Qué hace
 Dado un identificador de entidad (LEI, número de registro, o nombre), consulta el registro global LEI (GLEIF) y determina si esa entidad tiene correspondencia de alta confianza en el registro mercantil nacional que su jurisdicción declarada haría esperable (UK Companies House, España BORME, Francia SIRENE). v0: gratuito, 100 llamadas/mes por clave, sin garantía de disponibilidad.
+
+## Cómo conseguir una clave
+POST https://api.nkodatalabs.com/v0/keys con `{"email": "tu@email.com"}` — devuelve `api_key` al instante, sin aprobación manual. Cada llamada a `/v0/find_missing` requiere la cabecera `x-api-key`.
+
+## Cliente Python
+`pip install nko` (PyPI, versión 0.1.0) — https://pypi.org/project/nko/
+```python
+import nko
+nko.find_missing("name", "Tesco PLC", jurisdiction="GB", api_key="tu_clave")
+```
 
 ## Qué NO afirma
 - Nunca dice "ilegal", "fraude", "entidad fantasma" ni ninguna variante.

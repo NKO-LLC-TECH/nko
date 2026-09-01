@@ -1,6 +1,7 @@
-"""Cliente minimo para NKO find_missing v0. Nombre de paquete 'nko'
-verificado libre en PyPI el 2026-08-31 (API JSON -> 404 Not Found).
-NO publicado todavia - requiere el token de PyPI del usuario."""
+"""Cliente minimo para NKO find_missing v0. Publicado en PyPI el
+2026-09-01 (v0.1.0) el mismo dia que se desplego la API real en
+https://api.nkodatalabs.com - consigue una clave gratuita con
+POST /v0/keys ({"email": "tu@email.com"}), 100 llamadas/mes."""
 from __future__ import annotations
 
 import httpx
