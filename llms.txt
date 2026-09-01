@@ -1,0 +1,22 @@
+# NKO find_missing v0
+
+## Qué hace
+Dado un identificador de entidad (LEI, número de registro, o nombre), consulta el registro global LEI (GLEIF) y determina si esa entidad tiene correspondencia de alta confianza en el registro mercantil nacional que su jurisdicción declarada haría esperable (UK Companies House, España BORME, Francia SIRENE). v0: gratuito, 100 llamadas/mes por clave, sin garantía de disponibilidad.
+
+## Qué NO afirma
+- Nunca dice "ilegal", "fraude", "entidad fantasma" ni ninguna variante.
+- "NO_HIGH_CONFIDENCE_MATCH" significa que GLEIF no tiene esa correspondencia enlazada — nunca que la entidad no exista en el registro nacional. La entidad podría estar registrada allí sin que GLEIF lo tenga vinculado.
+- Solo evalúa entidades que YA tienen un LEI real en GLEIF. Sin LEI, no hay resultado.
+- La regla de expectativa (por qué se esperaría encontrarla en ese registro) se incluye siempre en la respuesta — nunca se afirma una ausencia sin esa regla explícita.
+
+## Fuente
+api.gleif.org — API pública, sin autenticación, dominio Legal Entity Identifier (LEI) global, operado por GLEIF (Global Legal Entity Identifier Foundation).
+
+## Endpoint
+POST /v0/find_missing — ver openapi.json en este mismo repositorio para el esquema completo.
+
+## Licencia
+Código: MIT. Datos consultados en vivo de GLEIF bajo sus propios términos públicos.
+
+## Contacto
+NKO Data Labs — LLC de Delaware.

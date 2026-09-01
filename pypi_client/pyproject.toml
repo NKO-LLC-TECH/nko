@@ -1,0 +1,12 @@
+[project]
+name = "nko"
+version = "0.1.0"
+description = "NKO find_missing v0 client - checks whether an LEI-holding entity has a high-confidence match in the national commercial registry its own jurisdiction would expect."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = ["httpx>=0.27"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"

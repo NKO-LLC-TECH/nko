@@ -1,0 +1,13 @@
+{
+  "sources": [
+    {
+      "id": "global-gleif-lei-registry",
+      "gate_verdict": "GREEN"
+    },
+    {
+      "id": "uk-companies-house/es-borme/fr-sirene",
+      "gate_verdict": "review (atribucion obligatoria)"
+    }
+  ],
+  "output_license": "no declarada todavia - pendiente de decision del dueno"
+}

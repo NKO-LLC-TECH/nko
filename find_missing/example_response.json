@@ -1,0 +1,30 @@
+{
+  "entity_seen_in": [
+    {
+      "registry": "GLEIF (global LEI index)",
+      "id": "2138002P5RNKC5W2JZ46",
+      "matched_on": "lei",
+      "confidence": 1.0
+    },
+    {
+      "registry": "UK Companies House",
+      "id": "00445790",
+      "matched_on": "gleif.registration.validatedAt",
+      "confidence": 0.95
+    }
+  ],
+  "expected_in": [
+    {
+      "registry": "UK Companies House",
+      "reason": "Toda sociedad mercantil constituida en Inglaterra/Gales, Escocia o Irlanda del Norte debe registrarse en Companies House."
+    }
+  ],
+  "not_found_in": [],
+  "candidates": [],
+  "verdict": "CONSISTENT",
+  "method_version": "nko-find-missing-v0.1-2026-08-31",
+  "evidence_refs": [
+    "GLEIF API https://api.gleif.org/api/v1/lei-records (consulta en vivo)",
+    "entity_legal_name='TESCO PLC'"
+  ]
+}

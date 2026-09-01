@@ -1,0 +1,8 @@
+{
+  "method_version": "nko-find-missing-v0.1-2026-08-31",
+  "evidence_refs": [
+    "products/find-missing-api/main.py",
+    "products/find-missing-api/test_main.py (2/2 tests pasan, probado contra GLEIF real)"
+  ],
+  "repo_path": "products/find-missing-api/"
+}

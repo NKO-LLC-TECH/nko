@@ -1,0 +1,28 @@
+{
+  "id": "find_missing",
+  "name": "NKO find_missing",
+  "class": "A",
+  "status": "PASS",
+  "status_date": "2026-09-01",
+  "status_note": "Paso el commercial_filter_gate.py (6 preguntas + ORGANIC_DISCOVERY, ver gate.questions abajo). SIGNAL_EXPERIMENT en curso - v0 gratuito, mide demanda real antes de cualquier decision de precio.",
+  "description": "Consulta si una entidad con LEI tiene correspondencia de alta confianza en el registro mercantil nacional que su jurisdiccion declarada haria esperable (UK Companies House, ES BORME, FR SIRENE). Nunca afirma ilegalidad/fraude - solo 'sin correspondencia de alta confianza', con la regla de expectativa siempre en la respuesta. Nombres ambiguos devuelven candidates[] sin veredicto (Tarea 4a).",
+  "method_version": "nko-find-missing-v0.1-2026-08-31",
+  "gate": {
+    "questions": {
+      "DEMAND": "YES",
+      "DELTA": "YES",
+      "RIGHTS": "YES",
+      "DISTRIBUTION": "YES",
+      "REPEATABILITY": "YES",
+      "NKO_ADVANTAGE": "YES"
+    },
+    "ORGANIC_DISCOVERY": {
+      "score": 2,
+      "existing_demand": "YES",
+      "machine_consumable": "YES",
+      "self_service_purchase": "PLAUSIBLE",
+      "discovery_channel": "PyPI, directorios de APIs (RapidAPI, APIs.guru), registros MCP",
+      "customer_education_required": "LOW"
+    }
+  }
+}

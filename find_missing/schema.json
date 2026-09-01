@@ -1,0 +1,16 @@
+{
+  "input": {
+    "identifier_type": "lei|company_number|name",
+    "identifier": "str",
+    "jurisdiction": "str|null"
+  },
+  "output": {
+    "entity_seen_in": "list",
+    "expected_in": "list",
+    "not_found_in": "list",
+    "candidates": "list",
+    "verdict": "str|null",
+    "method_version": "str",
+    "evidence_refs": "list"
+  }
+}

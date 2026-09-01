@@ -1,0 +1,5 @@
+{
+  "status": "NOT_MONETIZED_YET",
+  "cost_per_execution_estimate": "1-2 llamadas HTTP a api.gleif.org, <1s",
+  "note": "v0/prueba de demanda - sin cobro. No inventar un precio de venta antes del filtro comercial (Tarea 2)."
+}
