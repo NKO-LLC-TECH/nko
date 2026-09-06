@@ -1,0 +1,13 @@
+{
+  "input": {
+    "patent_number": "str, ej. '8727430' o 'US8727430'"
+  },
+  "output": {
+    "patent_number": "str",
+    "reported_state": "dict|null (Google Patents: value/url/filing_date/grant_date/disclaimer)",
+    "nko_state": "dict (USPTO Gazette: value ACTIVE|EXPIRED|UNKNOWN, official_evidence, expired_on)",
+    "mismatch": "bool|null",
+    "confidence": "float|null",
+    "checked_at": "str"
+  }
+}

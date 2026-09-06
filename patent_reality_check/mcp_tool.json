@@ -1,0 +1,15 @@
+{
+  "name": "patent_reality_check",
+  "description": "Consulta el estado legal de una patente de EEUU tal como lo muestra Google Patents y lo cruza contra los avisos semanales reales del Official Gazette de la USPTO de caducidad por impago de tasas de mantenimiento (35 U.S.C. 41, 37 CFR 1.362(g)) - un hecho oficial primario, nunca una inferencia. Hallazgo real: en una muestra aleatoria n=50 sobre 179.840 caducidades reales confirmadas por la Gazette, Google Patents seguia mostrando 'Active' en 14/50 (28,0%, IC95% 17,5-41,7%) - caracterizado como una ventana de retraso de actualizacion de ~2-5 meses, no un fallo persistente (ver gazette_crosscheck_result.md para el detalle completo).",
+  "input_schema": {
+    "patent_number": "str, ej. '8727430' o 'US8727430'"
+  },
+  "output_schema": {
+    "patent_number": "str",
+    "reported_state": "dict|null (Google Patents: value/url/filing_date/grant_date/disclaimer)",
+    "nko_state": "dict (USPTO Gazette: value ACTIVE|EXPIRED|UNKNOWN, official_evidence, expired_on)",
+    "mismatch": "bool|null",
+    "confidence": "float|null",
+    "checked_at": "str"
+  }
+}

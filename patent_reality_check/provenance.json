@@ -1,0 +1,9 @@
+{
+  "method_version": "nko-reality-check-001-v0.1-2026-09-06",
+  "evidence_refs": [
+    "products/patent-reality-check/checker.py",
+    "products/patent-reality-check/test_checker.py (5/5 tests pasan, incluye una consulta real en vivo a Google Patents)",
+    "experiments/patent_confidence_v1/gazette_crosscheck_result.md (informe completo del hallazgo, PASS contra los 4 criterios de exito preregistrados)"
+  ],
+  "repo_path": "products/patent-reality-check/"
+}

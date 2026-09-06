@@ -1,0 +1,13 @@
+{
+  "sources": [
+    {
+      "id": "USPTO Official Gazette (Notice of Expiration of Patents Due to Failure to Pay Maintenance Fee)",
+      "gate_verdict": "GREEN, US Government Work - dominio publico"
+    },
+    {
+      "id": "Google Patents (legal status display, licenciado de IFI CLAIMS)",
+      "gate_verdict": "review - fuente de terceros citada, nunca redistribuida como propia"
+    }
+  ],
+  "output_license": "MIT (codigo) - el resultado combina un hecho oficial de dominio publico (USPTO) con una cita de un tercero (Google Patents), nunca redistribuye el dataset completo de ninguno de los dos"
+}

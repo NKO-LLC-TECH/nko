@@ -1,0 +1,16 @@
+{
+  "status": "PRICED_LIVE",
+  "free": {
+    "single_check": "unlimited, no account",
+    "batch": "up to 50 patents per request, no account"
+  },
+  "paid": {
+    "batch_max_patents": 5000,
+    "price_eur": 999.0,
+    "delivery": "within 24-48h, includes possibly-incorrect states + official USPTO evidence + verification date per patent"
+  },
+  "currency": "EUR",
+  "checkout_endpoint": "POST https://api.nkodatalabs.com/v1/patent-reality-check/batch/checkout",
+  "effective_since": "2026-09-06",
+  "note": "Publicado por decision del dueno 2026-09-06 tras el hallazgo real PASS (gazette_crosscheck_result.md, n=50, error de Google Patents 28.0% IC95% 17.5-41.7%)."
+}

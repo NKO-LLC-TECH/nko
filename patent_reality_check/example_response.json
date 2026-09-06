@@ -1,0 +1,21 @@
+{
+  "schema": "nko-reality-check-001/1.0",
+  "patent_number": "US8727430",
+  "reported_state": {
+    "source": "Google Patents",
+    "value": "Active",
+    "url": "https://patents.google.com/patent/US8727430B2/en",
+    "filing_date": "2012-03-07",
+    "grant_date": "2014-05-20"
+  },
+  "nko_state": {
+    "source": "USPTO Official Gazette - Notice of Expiration of Patents Due to Failure to Pay Maintenance Fee",
+    "value": "EXPIRED",
+    "reason": "maintenance_fee_nonpayment",
+    "official_evidence": "https://www.uspto.gov/web/offices/com/sol/og/2026/week28/TOC.htm",
+    "expired_on": "May 20, 2026"
+  },
+  "mismatch": true,
+  "confidence": 1.0,
+  "method_version": "nko-reality-check-001-v0.1-2026-09-06"
+}
